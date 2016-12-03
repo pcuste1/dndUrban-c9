@@ -1,0 +1,47 @@
+<head>
+    <title>root</title>
+    <style>
+        body{
+            background-color:black;
+        }
+        img{
+            display: block;
+            margin-top: 100px;
+            margin-right: auto;
+            margin-bottom: 50px;
+            margin-left: auto;
+            width: 400px;
+            height: 400px;
+        }
+        *:focus {
+            outline: none;
+        }
+        #password {
+            text-align: center;
+            margin-right: auto;
+            margin-left: auto;
+            display: block;
+            background-image: url(textfield.png);
+            background-repeat: no-repeat;
+            background-position: 50% 0%;
+            width: 400px;
+            height: 200px;
+        }
+        #textfield {
+            width: 160px;
+            border: 0;
+            margin-top: 5px;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+<body onload="document.forms[0].pw.focus()">
+    <img src='opening.gif'>
+    <form id="password" action="login.php" method="POST">
+        <input type="password" name="pw" id="textfield" maxlength="21">
+        <br />
+        <br />
+        <br />
+        <input type="image" src="enter_button.png" onMouseOver="this.src='enter_button_hover.png'" onMouseOut="this.src='enter_button.png'" alt="Enter">
+    </form>
+</body>    
